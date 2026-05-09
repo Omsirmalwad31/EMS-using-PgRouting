@@ -1,4 +1,4 @@
-# Metro EMS Routing Lab
+# EMS Routing 
 
 Full-stack EMS dispatch laboratory that routes synthetic urban corridors with **PostgreSQL**, **PostGIS**, and **pgRouting**. Four selectable algorithms (**Dijkstra**, **`A*`**, **bidirectional Dijkstra**, **K shortest paths**) share the same edge table; a React + Leaflet console visualizes routes on a dark basemap.
 
