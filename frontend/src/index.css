@@ -1,0 +1,57 @@
+:root {
+  color-scheme: dark;
+  --bg0: #080a0f;
+  --bg1: #101527;
+  --panel: rgba(18, 24, 40, 0.72);
+  --stroke: rgba(110, 190, 255, 0.35);
+  --text: #e9f5ff;
+  --muted: #8aa3bf;
+  --alert: #ff4d57;
+  --ice: #33f0ff;
+  --pulse: rgba(255, 77, 87, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  color: var(--text);
+  background: radial-gradient(ellipse 140% 80% at 20% -20%, rgba(51, 240, 255, 0.12), transparent),
+    radial-gradient(ellipse 100% 60% at 90% 0%, rgba(255, 77, 87, 0.09), transparent), var(--bg0);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(transparent 31px, rgba(140, 180, 255, 0.04) 32px),
+    linear-gradient(90deg, transparent 31px, rgba(140, 180, 255, 0.04) 32px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at 50% 32%, rgba(0, 0, 0, 0.92), transparent 68%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+.field-label {
+  font-family: Outfit, system-ui, sans-serif;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+button:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--ice);
+  outline-offset: 2px;
+}
